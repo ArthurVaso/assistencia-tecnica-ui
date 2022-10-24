@@ -1,3 +1,4 @@
+import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,7 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 
-import { LancamentosModule } from './../../.git/lancamentos/lancamentos.module';
+
 
 @NgModule({
   declarations: [
@@ -22,10 +23,8 @@ import { LancamentosModule } from './../../.git/lancamentos/lancamentos.module';
     ButtonModule,
     TableModule,
     TooltipModule,
-
-    LancamentosModule
   ],
-  providers: [],
+  providers: [LancamentosModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
